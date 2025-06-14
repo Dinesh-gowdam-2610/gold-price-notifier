@@ -1,0 +1,4 @@
+os
+requests
+beautifulsoup4
+smtplib
