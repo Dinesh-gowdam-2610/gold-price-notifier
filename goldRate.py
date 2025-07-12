@@ -99,5 +99,4 @@ def send_email(subject, html_body):
 if __name__ == "__main__":
     report_html = get_gold_price_table_html()
     
-    # print(report_html)  # Optional console output
     send_email("Daily Gold Price Report (1g, 8g, 10g)", report_html)
