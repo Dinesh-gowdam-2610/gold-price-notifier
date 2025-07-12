@@ -2,7 +2,7 @@ name: Daily Gold Price Email
 
 on:
   schedule:
-    - cron: '*/2 * * * *'
+    - cron: "30 4 * * *"
   workflow_dispatch:
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: "3.10"
 
       - name: Install dependencies
         run: |
