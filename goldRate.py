@@ -70,7 +70,7 @@ def get_gold_price_table_html():
             """
 
         html += build_table("24K Gold", gold_24k)
-        html += build_table("22K Gold", gold_22k) 
+        html += build_table("22K Gold", gold_22k)
         
         return html
 
