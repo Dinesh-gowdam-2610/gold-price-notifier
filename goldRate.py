@@ -12,6 +12,7 @@ SENDER_EMAIL = os.getenv("SENDER_EMAIL")
 APP_PASSWORD = os.getenv("APP_PASSWORD")
 RECEIVER_EMAIL = os.getenv("RECEIVER_EMAIL")
 
+
 # ---------- 🔹 Scrape Gold Prices ----------
 def extract_table_prices(soup, carat_label):
     sections = soup.find_all("section")
