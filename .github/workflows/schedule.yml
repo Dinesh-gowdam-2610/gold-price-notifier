@@ -24,4 +24,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run script
+        env:
+          APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
+          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+          RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
         run: python goldRate.py
